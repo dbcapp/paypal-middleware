@@ -1,0 +1,15 @@
+{
+  "success": ["completed"],
+  "process": ["in-progress", "pending", "processed"],
+  "error": [
+    "canceled_reversal",
+    "declined",
+    "expired",
+    "failed",
+    "partially_refunded",
+    "refunded",
+    "reversed",
+    "voided",
+    "canceled-reversal"
+  ]
+}
