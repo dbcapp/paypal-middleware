@@ -30,7 +30,6 @@ const cfg = {
 
 app.use('/paypal', paypal(cfg));
 
-
 app.listen(3000, () => {
   console.log('Running on 3000');
 });
