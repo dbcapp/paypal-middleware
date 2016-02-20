@@ -8,7 +8,7 @@ Uses EventEMitter when a callback request is received.
 
 ```js
 'use strict';
-const paypal = require('../lib');
+const paypal = require('paypal-middleware');
 
 const app = express();
 
