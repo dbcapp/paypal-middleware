@@ -1,19 +1,19 @@
 'use strict';
 const express = require('express');
-const paypal = require('paypal-middleware');
+const paypal = require('../lib');
 
 
 let app = express();
 let cfg = {
   debug: true,
   process: (data) => {
-    console.log(data);
+    console.log({'a': 'process', 'data': data});
   },
   success: (data) => {
-    console.log(data);
+    console.log({'a': 'success', 'data': data});
   },
   error: (data) => {
-    console.log(data);
+    console.log({'a': 'error', 'data': data});
   }
 };
 
