@@ -34,6 +34,7 @@ describe('Paypal', () => {
     });
 
     it('should execute successfully', (done) => {
+      console.log(querystring.stringify(payload));
       request(app)
         .post('/ipn-callback')
         .set('Content-Type', 'application/x-www-form-urlencoded')
