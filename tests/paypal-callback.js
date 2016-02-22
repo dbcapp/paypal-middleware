@@ -9,11 +9,11 @@ const querystring = require('querystring');
 describe('Paypal', () => {
   let app;
 
-  beforeEach(() => {
+  before(() => {
     app = paypal({'debug': true});
   });
 
-  afterEach(() => {
+  after(() => {
     app = null;
   });
 
