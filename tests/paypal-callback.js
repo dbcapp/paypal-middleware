@@ -18,6 +18,13 @@ describe('Paypal', () => {
   });
 
   describe('Callback service', () => {
+    it('should have an missing body', (done) => {
+      request(app)
+        .post('/ipn-callback')
+        .set('Content-Type', 'application/x-www-form-urlencoded')
+        .expect(400, done)
+    });
+
     it('should have an invalid body', (done) => {
       request(app)
         .post('/ipn-callback')

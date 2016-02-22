@@ -1,6 +1,6 @@
 'use strict';
 const express = require('express');
-const paypal = require('../lib');
+const paypal = require('../lib'); //require('paypal-middleware');
 
 
 let app = express();
